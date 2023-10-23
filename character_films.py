@@ -30,3 +30,19 @@ class Character_films(Character):
     @alive_at_the_end.setter
     def alive_at_the_end(self, value):
         self._alive_at_the_end = value
+
+    def __str__(self):
+        return (" Edited: " + str(self.edited) +
+                " Name: " + str(self.name) +
+                " Created: " + str(self.created )+
+                " Gender: " + str(self.gender) +
+                " Skin_color: " + str(self.skin_color) +
+                " Hair_color: " + str(self.hair_color )+
+                " Height: " + str(self.height )+
+                " Eye_color: " + str(self.eye_color) +
+                " Mass: " + str(self.mass )+
+                " Homeworld: " + str(self.homeworld) +
+                " Birth_year: " + str(self.birth_year) +
+                " Num_films: " + str(self.num_films) +
+                " First_film: " + str(self.first_film) +
+                " Alive_at_the_end: " + str(self.alive_at_the_end) )
