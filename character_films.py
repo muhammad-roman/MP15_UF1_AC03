@@ -32,7 +32,7 @@ class Character_films(Character):
         self._alive_at_the_end = value
 
     def __str__(self):
-        return (" Edited: " + str(self.edited) +
+        return ("\033[91m -Edited: " + str(self.edited) +
                 " Name: " + str(self.name) +
                 " Created: " + str(self.created )+
                 " Gender: " + str(self.gender) +
@@ -43,6 +43,6 @@ class Character_films(Character):
                 " Mass: " + str(self.mass )+
                 " Homeworld: " + str(self.homeworld) +
                 " Birth_year: " + str(self.birth_year) +
-                " Num_films: " + str(self.num_films) +
+                " Num_films: " + str(self.num_of_films) +
                 " First_film: " + str(self.first_film) +
-                " Alive_at_the_end: " + str(self.alive_at_the_end) )
+                " Alive_at_the_end: " + str(self.alive_at_the_end) + "\033[0m \n" )

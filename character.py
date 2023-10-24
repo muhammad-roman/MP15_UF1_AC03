@@ -14,11 +14,11 @@ class Character:
 
     @property
     def info(self):
-        info_text = f"Name: {self.name}, Gender: {self.gender}, Homeworld: {self.homeworld}, Birth Year: {self.birth_year}"
+        info_text = f"\033[94m INFORMATION ABOUT THE SELECTED CHARACTER: His/Her name is {self.name}, he/she is a {self.gender}, he/she comes from planet {self.homeworld} and his/her birth year is: {self.birth_year} \033[0m"
         return info_text  
     
     def __str__(self):
-        return (" Edited: " + str(self.edited) +
+        return (" -Edited: " + str(self.edited) +
                 " Name: " + str(self.name) +
                 " Created: " + str(self.created )+
                 " Gender: " + str(self.gender) +
@@ -28,6 +28,7 @@ class Character:
                 " Eye_color: " + str(self.eye_color) +
                 " Mass: " + str(self.mass )+
                 " Homeworld: " + str(self.homeworld) +
-                " Birth_year: " + str(self.birth_year) )
+                " Birth_year: " + str(self.birth_year) +
+                "\n")
 
 
